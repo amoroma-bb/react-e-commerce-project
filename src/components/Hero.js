@@ -3,26 +3,30 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import heroBcg from '../assets/hero-bcg.jpeg'
 import heroBcg2 from '../assets/hero-bcg-2.jpeg'
-
 const Hero = () => {
-  return <Wrapper className='section-center'>
-    <article className='content'>
-      <h1>
-        design your <br/>
-        comfort zone
-      </h1>
-      <p>
-        Sit qui laboris excepteur amet reprehenderit irure officia aliquip do eu duis incididunt. Fugiat aliquip consectetur excepteur ad duis. Dolor do culpa nostrud eu Lorem pariatur ex. Eiusmod aliquip do sint consectetur esse commodo id aliqua magna duis eu pariatur. Id laboris nulla laboris in nisi ipsum sint dolore.
-      </p>
-      <Link to="/products" className='btn hero-btn'>
-        shop now
-      </Link>
-    </article>
-    <article className='img-container'>
-      <img src={heroBcg} alt="nice table" className='main-img'/>
-      <img src={heroBcg2} alt="person" className='accent-img'/>
-    </article>
-  </Wrapper>
+  return (
+    <Wrapper className='section-center'>
+      <article className='content'>
+        <h1>
+          design your <br />
+          comfort zone
+        </h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, at
+          sed omnis corporis doloremque possimus velit! Repudiandae nisi odit,
+          aperiam odio ducimus, obcaecati libero et quia tempora excepturi quis
+          alias?
+        </p>
+        <Link to='/products' className='btn hero-btn'>
+          shop now
+        </Link>
+      </article>
+      <article className='img-container'>
+        <img src={heroBcg} alt='nice table' className='main-img' />
+        <img src={heroBcg2} alt='person working' className='accent-img' />
+      </article>
+    </Wrapper>
+  )
 }
 
 const Wrapper = styled.section`

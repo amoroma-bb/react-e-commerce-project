@@ -1,31 +1,35 @@
 import React from 'react'
 import styled from 'styled-components'
 import { services } from '../utils/constants'
-
 const Services = () => {
-  return <Wrapper>
-    <div className='section-center'>
-      <article className='header'>
-        <h3>
-          custom furniture <br/>
-          built only for you
-        </h3>
-        <p>
-          Eu do consectetur excepteur deserunt. Occaecat enim duis nostrud dolore ullamco consequat non incididunt eiusmod ullamco eiusmod id quis. Aute laborum quis enim et do. Eu ea consectetur tempor et cillum mollit amet occaecat. Culpa et nulla culpa velit mollit enim minim non. Fugiat esse laboris veniam dolore enim. Duis Lorem voluptate occaecat sint.
-        </p>
-      </article>
-      <div className='services-center'>
-        {services.map((service)=>{
-          const {id,icon,title,text} = service
-          return <article key={id} className='service'>
-            <span className='icon'>{icon}</span>
-            <h4>{title}</h4>
-            <p>{text}</p>
-          </article>
-        })}
+  return (
+    <Wrapper>
+      <div className='section-center'>
+        <article className='header'>
+          <h3>
+            custom furniture <br /> built only for you
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+            dolorum debitis consectetur reprehenderit non aliquam voluptates
+            dolore aut vero consequuntur.
+          </p>
+        </article>
+        <div className='services-center'>
+          {services.map((service) => {
+            const { id, icon, title, text } = service
+            return (
+              <article className='service' key={id}>
+                <span className='icon'>{icon}</span>
+                <h4>{title}</h4>
+                <p>{text}</p>
+              </article>
+            )
+          })}
+        </div>
       </div>
-    </div>
-  </Wrapper>
+    </Wrapper>
+  )
 }
 
 const Wrapper = styled.section`
